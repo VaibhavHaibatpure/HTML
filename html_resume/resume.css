@@ -7,20 +7,24 @@ body {
 }
 .full {
 	width: 65%;
-	max-width: 1500px;
-	min-height: 150px;
+	max-width: 1800px;
+	min-height: 170px;
 	background-color: rgb(245, 239, 231);
 	margin: 0px;
 	display: grid;
 	grid-template-columns: 2fr 4fr;
 }
 .left {
+	border-top-left-radius:20px;
+	border-bottom-left-radius:20px;
 	position: initial;
 	background-color: rgb(126, 219, 231);
 	padding: 20px;
 
 }
 .right {
+	border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
 	position: initial;
 	background-color: rgb(162, 202, 206);
 	padding: 20px;

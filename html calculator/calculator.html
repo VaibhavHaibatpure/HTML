@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title>Calculator</title>
+    <style>
+        input[type=button] {
+            background-color: aqua;
+            width: 10%;
+            height: 7%;
+        }
+        input[type=text]{
+            width: 41%;
+            height: 10%;
+            font-size:xx-large;
+            
+        }
+
+        
+    </style>
+  </head>
+  <body >
+    <br><br>
+    <center>
+    <div>
+        <div>
+            <input type="text" id="result">
+        </div>
+        <br><br>
+        <div>
+            <input type="button" value="1" onclick=addtobox(1)>
+            <input type="button" value="2" onclick=addtobox(2)>
+            <input type="button" value="3" onclick=addtobox(3)>
+            <input type="button" value="+" onclick="document.getElementById('result').value+='+'">
+        </div>
+        <br> <br>
+        <div>
+            <input type="button" value="4" onclick=addtobox(4)>
+            <input type="button" value="5" onclick=addtobox(5)>
+            <input type="button" value="6" onclick=addtobox(6)>
+            <input type="button" value="-" onclick="document.getElementById('result').value+='-'">
+        </div>
+
+        <br> <br>
+        <div>
+            <input type="button" value="7" onclick=addtobox(7)>
+            <input type="button" value="8" onclick=addtobox(8)>
+            <input type="button" value="9" onclick=addtobox(9)>
+            <input type="button" value="*" onclick="document.getElementById('result').value+='*'">
+        </div>
+        <br> <br>
+        <div>
+            <input type="button" value="C" onclick="document.getElementById('result').value=''">
+            <input type="button" value="0" onclick=addtobox(0)>
+            <input type="button" value="="
+                onclick="document.getElementById('result').value=eval(document.getElementById('result').value)">
+            <input type="button" value="/" onclick="document.getElementById('result').value+='/'">
+        </div>
+        <br>
+    </div>
+</center>
+
+  </body>
+
+
+  <script>
+    function addtobox(a){
+        document.getElementById('result').value+=a
+    }
+  </script>
+
+</html>
